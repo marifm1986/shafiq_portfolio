@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\Techwake360\\\\shafiq_portfolio\" -Force)",
+      "Bash(Select-Object Name, Mode)",
+      "PowerShell(ls -R \"d:\\\\Techwake360\\\\shafiq_portfolio\\\\app\")",
+      "Bash(Get-ChildItem -Path \"d:\\\\Techwake360\\\\shafiq_portfolio\\\\node_modules\\\\next\\\\dist\\\\docs\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object Name)",
+      "PowerShell(Head -20)",
+      "PowerShell($items = @\\(Get-ChildItem -Path \"d:\\\\Techwake360\\\\shafiq_portfolio\\\\node_modules\\\\next\\\\dist\\\\docs\" -Force -ErrorAction SilentlyContinue\\); if \\($items.Count -eq 0\\) { \"Directory is empty\" } else { $items | Select-Object Name })"
+    ]
+  }
+}
